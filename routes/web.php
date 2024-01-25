@@ -18,5 +18,5 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['prefix' => 'api'], function() use ($router) {
-    $router->get('/test', 'QrCodeController@test');
+    $router->post('/generate-text-qr', 'QrCodeController@generateTextQr');
 });
